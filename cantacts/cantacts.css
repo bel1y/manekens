@@ -1,0 +1,175 @@
+#contacts h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 30px;
+}
+
+.contacts-big{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 5px;
+    width: 100%;
+}
+.about-contacts{
+    width: 50%;
+}
+.small-inside-div{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.small-inside-div h3{
+font-weight: 700;
+font-family: "Nunito", serif;
+font-optical-sizing: auto;
+font-style: normal;
+}
+.small-inside-div p{
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.telegramm-about{
+    display: flex;
+    align-items: center;gap: 3px;
+
+}
+.telegramm-about a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.telegramm-about a:hover{
+    color: #009B77 ;
+}
+.special-p-contacts{
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.special-p-contacts:hover{
+    color: #009B77 ;
+}
+
+.send-message-to-bot{
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.send-message-to-bot h2 {
+    text-align: center;
+}
+.send-message-to-bot input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.send-message-to-bot button {
+    width: 100%;
+    padding: 10px;
+    background-color: #009B77;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: .5s;
+}
+.send-message-to-bot button:hover {
+    background-color: #fff;
+    color: #009B77;
+    box-shadow: 0 0 10px #009B77;
+}
+.send-message-to-bot .error {
+    color: red;
+    display: none;
+}
+
+
+@media (max-width:1100px) {
+.send-message-to-bot{
+    width: 450px;
+}
+}
+
+@media (max-width:950px) {
+.small-inside-div h3{
+    font-size: 17px;
+    }
+}
+@media (max-width:800px) {
+.contacts-big{
+    display: block;
+    padding: 20px;
+    width: 100%;
+}
+.send-message-to-bot{
+    max-width: 100%;
+    width: 100%;
+}
+.small-inside-div {
+    text-align: center;
+    width: 100%;
+    }
+    .about-contacts{
+        width: 100%;
+    }
+    .telegramm-about{
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+    .telegramm-about a{
+        cursor: pointer;
+        text-decoration: underline;
+        color: black;
+        font-weight: 500;
+        font-family: "Nunito", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+}
+@media (max-width:350px) {
+.telegramm-about{
+    display: block;  
+    text-align: center;
+}
+.telegramm-about a{
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+} 
+}
+

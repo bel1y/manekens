@@ -17,6 +17,17 @@
     width: 100%;
     height: 100%;
 }
+.navbar-look-mannequin a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 50px;
+    background-color: #009B77;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 
 .navbar-info{
     font-weight: 500;
@@ -174,7 +185,70 @@
     display: none;
 }
 
+
+.media-navbar-info-div{
+    padding: 5px 20px ;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.media-navbar-info{
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: start;
+}
+.media-navbar-info a{
+    text-decoration: none;
+}
+.media-navbar-info h5:hover{
+    color: #009B77 ;
+}
+.media-navbar-info p{
+    font-size: 12px;
+    font-weight: 800;
+    color: #4b4b4b;
+}
+.media-navbar-info span{
+    font-size: 13px;
+    color: #808080;
+    font-weight:6500;
+}
+.media-navbar-info h5{
+    font-weight: 800;
+    font-size: 13px;
+    color: #4b4b4b;
+    cursor: pointer;
+}
+
+.navbar-menu{
+    display: none;
+}
+
+#bx-phone{
+    background: #009b15; 
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+@media (max-width:1100px) {
+    .navbar a{
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+    }
+}
+
 @media (max-width:1000px) {
+
     .delevery-uz-sng{
         display: flex;
         align-items: center;
@@ -186,5 +260,45 @@
         font-optical-sizing: auto;
         font-style: normal;
         height: 30px;
+        font-size: 20px;
     }
+    .navbar{
+        display: none;
+    }
+    .down-navbar-sm{
+        display: none;
+    }
+    .down-site-navbar{
+        display: block;
+        width: 100%;
+        padding: 0px;
+    }
+    .navbar-info{
+        display: none;
+    }
+    .navbar-look-mannequin{
+        display: none;
+    }
+    .navbar-logo{
+        width: 130px;
+        height: 130px;
+    }
+    .navbar-menu{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .menu i{
+        font-size: 30px;
+    }
+    .navbar-sm a{
+        text-decoration: none;
+    }
+    .media-navbar-info-div{
+        display: flex;
+    }
+}
+
+@media (max-width:600px) {
+    
 }

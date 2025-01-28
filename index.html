@@ -29,12 +29,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="./images/logo.png">
+    <link rel="icon" href="./image/logo.png">
     <title>Niyat Maneken</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./navbar/navbar.css">
     <link rel="stylesheet" href="./footer/footer.css">
+    <link rel="stylesheet" href="./cantacts/cantacts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -48,13 +49,34 @@
             <div class="navbar-logo">
                <a href="#"><img src="./image/logo.png" alt=""></a> 
             </div>
-
+            <div class="navbar-look-mannequin">
+                <a href="#">Топ манекены на сегодня</a>
+            </div>
             <div class="navbar-info">
                     <p>Ташкентское ш. Яшнабадский район, Тузель-3, дом 16</p>
                     <span>пн.-вс. 9:00-18:00</span>
                     <a href="https://mail.google.com/mail/u/0/#search/niyat.joynamoz%40gmail.com?compose=new"><h5>niyat.joynamoz@gmail.com</h5></a>
-                    <h4><i class='bx bx-phone'></i> +998991509050</h4>
+                    <a href="tel:+998991509050"><h4><i class='bx bx-phone'></i> +998991509050</h4></a>
             </div>
+            <div class="navbar-menu">
+                <div class="change-languge">
+                    <div class="custom-select">
+                        <div class="select-selected">
+                            <div class="selec-text">
+                                <img src="./image/flag_Ru.png" alt=""> <p>Русский</p>
+                            </div>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                        <div class="select-items">
+                            <div onclick="Russian()"><img src="./image/flag_Ru.png" alt=""> Русский</div>
+                            <div onclick="Uzbek()"><img src="./image/flag_uzbekistana.png" alt="">Uzbekcha</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <i class='bx bx-menu-alt-right'></i>
+                </div>
+                </div>
         </div>
         <div class="down-site-navbar">
             <div class="navbar">
@@ -90,11 +112,64 @@
                     </div>
                 </div>
         </div>
+        <div class="media-navbar-info-div">
+            <div class="media-navbar-info">
+                <p>Ташкентское ш. Яшнабадский район, Тузель-3, дом 16</p>
+                <span>9:00-18:00 пн.-вс.</span>
+                <a href="https://mail.google.com/mail/u/0/#search/niyat.joynamoz%40gmail.com?compose=new"><h5>niyat.joynamoz@gmail.com</h5></a>
+            </div>
+                <div class="navbar-sm">
+                    <a href="tel:+998991509050"><div id="bx-phone"><i class='bx bx-phone'></i></div></a>
+                    <a href="https://www.instagram.com/maneken_niyat?igsh=dTZ6NjBrd2ZidHlv&utm_source=qr"><div id="bxl-instagram-footer"><i class='bx bxl-instagram' ></i></div></a>
+                <a href="https://t.me/@niyat_maneken"><div id="bxl-telegram-footer"><i class='bx bxl-telegram' ></i></div></a>
+                </div>
+        </div>
 
     </nav>
 
 
-
+    <section id="contacts">
+        <h1>Контакты</h1>
+        <div class="contacts-big">
+            <div class="about-contacts">
+                <div class="small-inside-div">
+                    <h3>Адрес:</h3>
+                    <p>Город Ташкент</p>
+                </div>
+                <div class="small-inside-div">
+                    <h3>Телефон:</h3>
+                    <p>+998 (99) 999-99-99</p>
+                </div>
+                <div class="small-inside-div">
+                    <h3>Telegram:</h3>
+                    <div class="telegramm-about">
+                        <a href="telegram.com">Служба поддержки,</a>
+                        <a href="telegram.com">Канал с новостями</a>
+                    </div>
+                </div>
+                <div class="small-inside-div">
+                    <h3>Email:</h3>
+                    <p>niyatmanekens@gmail.com</p>
+                </div>
+                <div class="small-inside-div">
+                    <h3>По вопросам самовывоза и доставки посылок:</h3>
+                    <a href="telegram.com" class="special-p-contacts">Telegram</a>
+                </div>
+            </div>
+            <div class="send-message-to-bot">
+                <h2>Свяжитесь с нами</h2>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Ваше имя" required>
+                    <input type="email" id="email" placeholder="Ваш email" required>
+                    <input type="tel" id="phone" placeholder="Ваш телефон" required>
+                    <input type="text" id="telegram" placeholder="Ваш Telegram (username)" required>
+                    <textarea id="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+                    <button type="submit">Отправить</button>
+                    <p class="error" id="errorMessage">Пожалуйста, заполните все поля.</p>
+                </form>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="footers-div">
             <div class="footer-text">
