@@ -75,10 +75,12 @@ font-style: normal;
     font-family: "Nunito", serif;
     font-optical-sizing: auto;
     font-style: normal;
+
 }
 
 .send-message-to-bot h2 {
     text-align: center;
+    padding-top: 10px;
 }
 .send-message-to-bot input, textarea {
     width: 100%;
@@ -111,6 +113,13 @@ font-style: normal;
     display: none;
 }
 
+.small-inside-div a{
+    text-decoration: none;
+    color: black;
+}
+.small-inside-div a:hover{
+    color: #009B77;
+}
 
 @media (max-width:1100px) {
 .send-message-to-bot{
@@ -126,12 +135,20 @@ font-style: normal;
 @media (max-width:800px) {
 .contacts-big{
     display: block;
-    padding: 20px;
+    padding: 0px;
     width: 100%;
 }
 .send-message-to-bot{
-    max-width: 100%;
+    max-width: 80%;
     width: 100%;
+    padding: 0px;
+}
+.send-message-to-bot input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 2.5%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 .small-inside-div {
     text-align: center;
@@ -154,7 +171,32 @@ font-style: normal;
         font-optical-sizing: auto;
         font-style: normal;
     }
+    .send-message-to-bot button {
+        width: 95%;
+        margin: 2.5%;
+    }
 }
+
+
+@media (max-width:450px) {
+
+    .send-message-to-bot{
+        max-width: 90%;
+        width: 100%;
+        padding: 0px;
+    }
+    .send-message-to-bot input, textarea {
+        width: 90%;
+        padding: 10px 3px 10px 10px;
+        margin: 10px 2.5%;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+        .send-message-to-bot button {
+            width: 95%;
+            margin: 2.5%;
+        }
+    }
 @media (max-width:350px) {
 .telegramm-about{
     display: block;  
