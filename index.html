@@ -93,16 +93,11 @@
         </div>
             <div class="down-navbar-sm">
                 <div class="change-languge">
-                    <div class="custom-select">
-                        <div class="select-selected">
-                            <div class="selec-text">
-                                <img src="./image/flag_Ru.png" alt=""> <p>Русский</p>
-                            </div>
-                            <i class='bx bx-chevron-down'></i>
-                        </div>
-                        <div class="select-items">
-                            <div onclick="Russian()"><img src="./image/flag_Ru.png" alt=""> Русский</div>
-                            <div onclick="Uzbek()"><img src="./image/flag_uzbekistana.png" alt="">Uzbekcha</div>
+                    <div class="select-wrapper">
+                        <div class="select" onclick="toggleOptions(event)"><img src="./image/flag_Ru.png" alt=""> Русский</div>
+                        <div class="options">
+                            <div class="option"  onclick="selectOption(event, 'index.html')"><img src="./image/flag_Ru.png" alt=""> Русский</div>
+                            <div class="option" onclick="selectOption(event, 'Uzbekcha.html')"><img src="./image/flag_uzbekistana.png" alt=""> Uzbekcha</div>
                         </div>
                     </div>
                 </div>

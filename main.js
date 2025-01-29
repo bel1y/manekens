@@ -1,36 +1,38 @@
-const selected = document.querySelector('.select-selected');
-const items = document.querySelector('.select-items');
+function toggleOptions(event) {
+    const select = event.currentTarget;
+    select.classList.toggle('open');
+}
 
-selected.addEventListener('click', () => {
-    items.style.display = items.style.display === 'block' ? 'none' : 'block';
-});
+function selectOption(event, page) {
+    const select = document.querySelector('.select');
+    select.textContent = event.currentTarget.textContent;
+    select.classList.remove('open');
+    if (page) {
+        window.location = `/${page}`;
+    }
+}
 
-document.querySelectorAll('.select-items div').forEach(item => {
-    item.addEventListener('click', () => {
-        const imgSrc = item.querySelector('img').src;
-        const langText = item.textContent.trim();
-        selected.innerHTML = `<img src="${imgSrc}" alt=""> ${langText}`;
-        items.style.display = 'none';
-    });
-});
-
-document.addEventListener('click', (e) => {
-    if (!selected.contains(e.target) && !items.contains(e.target)) {
-        items.style.display = 'none';
+// Закрытие списка при клике вне селекта
+document.addEventListener('click', function(event) {
+    const selectWrapper = document.querySelector('.select-wrapper');
+    if (!selectWrapper.contains(event.target)) {
+        const select = document.querySelector('.select');
+        select.classList.remove('open');
     }
 });
 
 function Uzbek() {
-    window.location="/Uzbekcha.html"
-}
-function Russian() {
-    window.location="/index.html"
+    window.location = "/Uzbekcha.html";
 }
 
+function Russian() {
+    window.location = "/index.html";
+}
 
 function openmenu() {
-    document.querySelector(".media-menu-navabr").style="top:0;"
+    document.querySelector(".media-menu-navabr").style = "top:0;";
 }
+
 function closemenu() {
-    document.querySelector(".media-menu-navabr").style="top:-1000000px;"
+    document.querySelector(".media-menu-navabr").style = "top:-1000000px;";
 }

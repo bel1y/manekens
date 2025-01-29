@@ -65,81 +65,57 @@
     align-items: center;
     justify-content: center;
     user-select: none;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-.custom-select {
+.select-wrapper {
     position: relative;
     display: inline-block;
     width: 200px;
 }
-
-.select-selected {
-    background-color: #fff;
-    border: 1px solid #c9c9c9be;
-    border-radius: 10px;
-    cursor: pointer;
-    padding-left: 10px;
-    font-weight: 500;
-    font-family: "Nunito", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 15px;
-    height: 35px;
+.select {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 5px;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #bebebe;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
 }
-.select-selected i{
-    font-size: 20px;
-}
-.select-selected img{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-}
-.select-items {
+.options {
     display: none;
     position: absolute;
     background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    z-index: 99;
+    border: 1px solid #bebebe;
+    z-index: 1;
     width: 100%;
-    font-weight: 500;
-    font-family: "Nunito", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    padding: 3px;
+    border-radius: 10px;
+    padding: 5px;
 }
-
-.select-items div {
-    height: 35px;
+.option {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
     display: flex;
     align-items: center;
-    padding-left: 5px;
-    gap: 5px;
-    cursor: pointer;
+    gap: 10px;
 }
-.select-items img{
+
+.option:hover {
+    background-color: #009B77;
+    color: #fff;
+}
+.select.open + .options {
+    display: block;
+}
+.select-wrapper img{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-}
-.select-items div:hover {
-    background-color: #009B77;
-    color: #fff;
-    border-radius: 10px;
-}
-
-.select-selected:focus + .select-items {
-    display: block;
-}
-
-.selec-text{
-    display: flex;
-    align-items: center;
-    gap: 5px;
 }
 
 .down-site-navbar{
