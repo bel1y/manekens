@@ -26,3 +26,11 @@ function Uzbek() {
 function Russian() {
     window.location="/index.html"
 }
+
+
+function openmenu() {
+    document.querySelector(".media-menu-navabr").style="top:0;"
+}
+function closemenu() {
+    document.querySelector(".media-menu-navabr").style="top:-1000000px;"
+}

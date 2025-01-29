@@ -7,6 +7,12 @@
     font-style: normal;
     padding: 30px;
 }
+@media (max-width:500px) {
+    #contacts h1{
+        font-size: 30px;
+    }
+}
+
 
 .contacts-big{
     display: flex;
@@ -135,7 +141,7 @@ font-style: normal;
 @media (max-width:800px) {
 .contacts-big{
     display: block;
-    padding: 0px;
+    padding: 0px 3px 0px 3px;
     width: 100%;
 }
 .send-message-to-bot{
