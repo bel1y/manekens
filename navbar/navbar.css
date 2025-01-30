@@ -79,12 +79,21 @@
 .select {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: space-between;
     padding: 10px;
     border: 1px solid #bebebe;
     cursor: pointer;
     background-color: #fff;
     border-radius: 10px;
+}
+.selce-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.select-down i{
+    font-size: 20px;
+    font-weight: 500;
 }
 .options {
     display: none;
