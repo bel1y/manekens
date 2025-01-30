@@ -335,13 +335,23 @@
         width: 80px;
         height: 80px;
     }
-    .custom-select {
+    .select-wrapper{
         position: relative;
         display: inline-block;
         width: 130px;
     }
+    .select{
+        padding: 0 3px 0 5px;
+        height: 40px;
+    }
     .navbar-sm{
         display: flex;
         gap: 10px;
+    }
+    .up-site-navbar{
+        padding: 0 5px;
+    }
+    .media-navbar-info-div{
+        padding: 0 5px;
     }
 }

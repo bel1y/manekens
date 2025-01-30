@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 #contacts h1{
     text-align: center;
     font-size: 40px;
@@ -136,11 +141,9 @@ font-style: normal;
 }
 
 @media (max-width:950px) {
-.small-inside-div h3{
-    font-size: 17px;
-    }
-}
-@media (max-width:800px) {
+    .small-inside-div h3{
+        font-size: 17px;
+        }
     #contacts{
         padding: 7px;
     }
@@ -155,7 +158,7 @@ font-style: normal;
     padding: 0px;
 }
 .send-message-to-bot input, textarea {
-    width: 90%;
+    width: 95%;
     padding: 10px;
     margin: 10px 2.5%;
     border: 1px solid #ccc;
@@ -188,29 +191,17 @@ font-style: normal;
     }
 }
 
-/* @media (max-width:500px) {
-    .small-inside-div h3{
-        font-size: 17px;
-    }
-    .small-inside-div a{
-        font-size: 13px;
-    }
-    .small-inside-div p{
-        font-size: 13px;
-    }
-    #contacts{
-    }
-} */
+
 
 @media (max-width:450px) {
 
     .send-message-to-bot{
-        max-width: 90%;
+        max-width: 95%;
         width: 100%;
         padding: 0px;
     }
     .send-message-to-bot input, textarea {
-        width: 90%;
+        width: 95%;
         padding: 10px 3px 10px 10px;
         margin: 10px 2.5%;
         border: 1px solid #ccc;

@@ -32,11 +32,9 @@
     <link rel="icon" href="./image/logo.png">
     <title>Niyat Maneken</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./navbar/navbar.css">
-    <link rel="stylesheet" href="./footer/footer.css">
-    <link rel="stylesheet" href="./cantacts/cantacts.css">
-    <link rel="stylesheet" href="./about us/aboutus.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="./aboutus.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -48,7 +46,7 @@
     <nav>
         <div class="up-site-navbar">
             <div class="navbar-logo">
-               <a href="#"><img src="./image/logo.png" alt=""></a> 
+               <a href="../index.html"><img src="../image/logo.png" alt=""></a> 
             </div>
             <div class="navbar-look-mannequin">
                 <a href="#">Топ манекены на сегодня</a>
@@ -61,18 +59,16 @@
             </div>
             <div class="navbar-menu">
                 <div class="change-languge">
-                    <div class="select-wrapper">
-                        <div class="select" onclick="toggleOptions(event)">
-                            <div class="selce-text">
-                                <img src="./image/flag_Ru.png" alt=""> Русский
+                    <div class="custom-select">
+                        <div class="select-selected">
+                            <div class="selec-text">
+                                <img src="../image/flag_Ru.png" alt=""> <p>Русский</p>
                             </div>
-                            <div class="select-down">
-                                <i class='bx bx-chevron-down'></i>
-                            </div>
+                            <i class='bx bx-chevron-down'></i>
                         </div>
-                        <div class="options">
-                            <div class="option"  onclick="selectOption(event, 'index.html')"><img src="./image/flag_Ru.png" alt=""> Русский</div>
-                            <div class="option" onclick="selectOption(event, 'Uzbekcha.html')"><img src="./image/flag_uzbekistana.png" alt=""> Uzbekcha</div>
+                        <div class="select-items">
+                            <div onclick="Russian()"><img src="../image/flag_Ru.png" alt=""> Русский</div>
+                            <div onclick="Uzbek()"><img src="../image/flag_uzbekistana.png" alt="">Uzbekcha</div>
                         </div>
                     </div>
                 </div>
@@ -83,13 +79,13 @@
         </div>
         <div class="down-site-navbar">
             <div class="navbar">
-                    <a href="">Главная</a>
+                    <a href="../index.html">Главная</a>
                     <a href="./about us/aboutus.html">О компании</a>
                     <a href="">Манекены</a>
                     <a href="">Вешалка</a>
                     <a href="">Всё для дома</a>
                     <a href="">Отзывы</a>
-                    <a href="./cantacts/contacts.html">Контакты</a>
+                    <a href="../cantacts/contacts.html">Контакты</a>
             </div>
         <div class="delevery-uz-sng">
             Доставка по всему Узбекистану и СНГ
@@ -99,15 +95,15 @@
                     <div class="select-wrapper">
                         <div class="select" onclick="toggleOptions(event)">
                             <div class="selce-text">
-                                <img src="./image/flag_Ru.png" alt=""> Русский
+                                <img src="../image/flag_Ru.png" alt=""> Русский
                             </div>
                             <div class="select-down">
                                 <i class='bx bx-chevron-down'></i>
                             </div>
                         </div>
                         <div class="options">
-                            <div class="option"  onclick="selectOption(event, 'index.html')"><img src="./image/flag_Ru.png" alt=""> Русский</div>
-                            <div class="option" onclick="selectOption(event, 'Uzbekcha.html')"><img src="./image/flag_uzbekistana.png" alt=""> Uzbekcha</div>
+                            <div class="option"  onclick="selectOption(event, 'index.html')"><img src="../image/flag_Ru.png" alt=""> Русский</div>
+                            <div class="option" onclick="selectOption(event, 'Uzbekcha.html')"><img src="../image/flag_uzbekistana.png" alt=""> Uzbekcha</div>
                         </div>
                     </div>
                 </div>
@@ -140,39 +136,7 @@
             <a href=""><p>Контакты</p></a>
         </div>
     </nav>
-
-
-    <section id="about-us">
-        <h1><span style="color: #009B77;">Преимущество</span> манекенов</h1>
-        <div class="advantages">
-            <div>
-                <p>1</p>
-                <h4>Качетсвенные манекены</h4>
-                <span>Качественные манекены идеально сочетают стиль и прочность, подчеркивая вашу коллекцию одежды.</span>
-            </div>
-            <div>
-                <p>2</p>
-                <h4>Качетсвенные манекены</h4>
-                <span>Качественные манекены идеально сочетают стиль и прочность, подчеркивая вашу коллекцию одежды.</span>
-            </div>
-            <div>
-                <p>3</p>
-                <h4>Качетсвенные манекены</h4>
-                <span>Качественные манекены идеально сочетают стиль и прочность, подчеркивая вашу коллекцию одежды.</span>
-            </div>
-            <div>
-                <p>4</p>
-                <h4>Качетсвенные манекены</h4>
-                <span>Качественные манекены идеально сочетают стиль и прочность, подчеркивая вашу коллекцию одежды.</span>
-            </div>
-            <div>
-                <p>5</p>
-                <h4>Качетсвенные манекены</h4>
-                <span>Качественные манекены идеально сочетают стиль и прочность, подчеркивая вашу коллекцию одежды.</span>
-            </div>
-        </div>
-    </section>
-
+    
     <div class="about-our-company">
         <h1>О нас</h1>
         <p>Мы — компания, созданная в 2022 году в Узбекистане, специализирующаяся на производстве манекенов. Наша цель — предоставить качественные и высокоэффективные решения для демонстрации одежды и аксессуаров. Мы стремимся к тому, чтобы наши продукты помогали бизнесам выделяться и привлекать внимание покупателей.</p>
@@ -182,63 +146,16 @@
         <p>Мы осуществляем доставку в соседние страны, включая Казахстан, Таджикистан, Россию и Киргизию, а также во все страны, расположенные рядом с Узбекистаном.</p>
     </div>
 
-
-
-    <section id="contacts">
-        <h1>Контакты</h1>
-        <div class="contacts-big">
-            <div class="about-contacts">
-                <div class="small-inside-div">
-                    <h3>Адрес:</h3>
-                    <p>Ташкентское ш. Яшнабадский район, Тузель-3, дом 16</p>
-                </div>
-                <div class="small-inside-div">
-                    <h3>Телефон:</h3>
-                    <a href="tel:+998991509050"><p>+998 (99) 150-90-50</p></a>
-                </div>
-                <div class="small-inside-div">
-                    <h3>Telegram:</h3>
-                    <div class="telegramm-about">
-                        <a href="https://t.me/@niyat_maneken">Служба поддержки,</a>
-                        <a href="https://t.me/@niyat_maneken">Канал с новостями</a>
-                    </div>
-                </div>
-                <div class="small-inside-div">
-                    <h3>Email:</h3>
-                    <p>niyat.joynamoz@gmail.com</p>
-                </div>
-                <div class="small-inside-div">
-                    <h3>По вопросам самовывоза и доставки посылок:</h3>
-                    <a href="https://t.me/@niyat_maneken" class="special-p-contacts">Telegram</a>
-                </div>
-            </div>
-            <div class="send-message-to-bot">
-                <h2>Свяжитесь с нами</h2>
-                <form id="contactForm">
-                    <input type="text" id="name" placeholder="Ваше имя" required>
-                    <input type="email" id="email" placeholder="Ваш email" required>
-                    <input type="tel" id="phone" placeholder="Ваш телефон" required>
-                    <input type="text" id="telegram" placeholder="Ваш Telegram (username)" required>
-                    <textarea id="message" rows="5" placeholder="Ваше сообщение" required></textarea>
-                    <button type="submit">Отправить</button>
-                    <p class="error" id="errorMessage">Пожалуйста, заполните все поля.</p>
-                </form>
-            </div>
-        </div>
-    </section>
-
-
-
     <footer>
         <div class="footers-div">
             <div class="footer-text">
-                <a href="#header">Главная</a>
-                <a href="./about us/aboutus.html">О компании</a>
+                <a href="../index.html">Главная</a>
+                <a href="./aboutus.html">О компании</a>
                 <a href="">Манекены</a>
                 <a href="">Вешалка</a>
                 <a href="">Всё для дома</a>
                 <a href="">Отзывы</a>
-                <a href="./cantacts/contacts.html">Контакты</a>
+                <a href="../cantacts/contacts.html">Контакты</a>
             </div>
             <div class="footer-social-media">
                 <a href="https://www.instagram.com/maneken_niyat?igsh=dTZ6NjBrd2ZidHlv&utm_source=qr"><div id="bxl-instagram-footer"><i class='bx bxl-instagram' ></i></div></a>
@@ -251,6 +168,7 @@
         </div>
 
     </footer>
-<script src="./main.js"></script>
+
+    <script src="../main.js"></script>
 </body>
 </html>
