@@ -223,3 +223,13 @@
         color: #009B77;
         border: 1px solid #009B77;
     }
+
+
+.mannequin h2{
+    font-size: 35px ;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-top: 40px;
+    padding-left: 20px;
+}
