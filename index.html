@@ -163,6 +163,119 @@
                 <img src="./image/white-removebg-preview (3).png" alt="">
             </div></a>
         </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                     <div class="swiper-image">
+                        <img src="./women mannequin image/black.png" alt="">
+                     </div>
+                     <div class="swiper-text">
+                        <h4>Стойка манекен женский - чёрный.</h4>
+                        <p>250.000 сум</p>
+                     </div>
+                     <div class="swiper-button">
+                        <a href="#"><button>Узнать больше</button></a>
+                     </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image">
+                        <img src="./men mannequin image/orange.png" alt="">
+                     </div>
+                     <div class="swiper-text">
+                        <h4>Стойка манекен мужской - оранжевый.</h4>
+                        <p>250.000 сум</p>
+                     </div>
+                     <div class="swiper-button">
+                        <a href="./description child/darkblue.html"><button>Узнать больше</button></a>
+                     </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image">
+                        <img src="./women mannequin image/darkblue.png" alt="">
+                     </div>
+                     <div class="swiper-text">
+                        <h4>Стойка манекен женский - синий.</h4>
+                        <p>250.000 сум</p>
+                     </div>
+                     <div class="swiper-button">
+                        <a href="./description child/white-child.html"><button>Узнать больше</button></a>
+                     </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image">
+                        <img src="./child mannequin image/pink.png" alt="">
+                     </div>
+                     <div class="swiper-text">
+                        <h4>Стойка манекен детксий - розовый.</h4>
+                        <p>250.000 сум</p>
+                     </div>
+                     <div class="swiper-button">
+                        <a href="./description child/burgundy-child.html"><button>Узнать больше</button></a>
+                     </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image">
+                        <img src="./men mannequin image/white.png" alt="">
+                     </div>
+                     <div class="swiper-text">
+                        <h4>Стойка манекен мужской - бедый.</h4>
+                        <p>250.000 сум</p>
+                     </div>
+                     <div class="swiper-button">
+                        <a href="./description child/black-child.html"><button>Узнать больше</button></a>
+                     </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image">
+                        <img src="./child mannequin image/darkpink.png" alt="">
+                     </div>
+                     <div class="swiper-text">
+                        <h4>Стойка манекен детксий - бардовый.</h4>
+                        <p>250.000 сум</p>
+                     </div>
+                     <div class="swiper-button">
+                        <a href="№"><button>Узнать больше</button></a>
+                     </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image">
+                        <img src="./women mannequin image/pink.png" alt="">
+                     </div>
+                     <div class="swiper-text">
+                        <h4>Стойка манекен женский - розовый.</h4>
+                        <p>250.000 сум</p>
+                     </div>
+                     <div class="swiper-button">
+                        <a href="№"><button>Узнать больше</button></a>
+                     </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image">
+                        <img src="./child mannequin image/white.png" alt="">
+                     </div>
+                     <div class="swiper-text">
+                        <h4>Стойка манекен детксий - белый.</h4>
+                        <p>250.000 сум</p>
+                     </div>
+                     <div class="swiper-button">
+                        <a href="№"><button>Узнать больше</button></a>
+                     </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image">
+                        <img src="./men mannequin image/blue.png" alt="">
+                     </div>
+                     <div class="swiper-text">
+                        <h4>Стойка манекен мужской - синий.</h4>
+                        <p>250.000 сум</p>
+                     </div>
+                     <div class="swiper-button">
+                        <a href="№"><button>Узнать больше</button></a>
+                     </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </section>
     
 
@@ -277,5 +390,41 @@
 
     </footer>
 <script src="./main.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 4,    // Количество отображаемых слайдов
+        spaceBetween: 30,     // Промежуток между слайдами
+        loop: true,           // Бесконечная прокрутка
+        autoplay: {
+            delay: 3000,     // Время смены слайдов (3 секунды)
+            disableOnInteraction: false, // Автопрокрутка не останавливается при взаимодействии
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            2000: {
+                slidesPerView: 6,
+            },
+            1700: {
+                slidesPerView: 5,
+            },
+            1100: {
+                slidesPerView: 4,
+            },
+            850: {
+                slidesPerView: 3,
+            },
+            550: {
+                slidesPerView: 2,
+            },
+            100: {
+                slidesPerView: 1,
+            },
+        },
+    });
+</script>
 </body>
 </html>
