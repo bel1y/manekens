@@ -36,6 +36,16 @@
     transition: all 0.5s ease;
     overflow: hidden;
 }
+@media (max-width:500px) {
+    .mannequin-small-div{
+        width: 325px;
+    }
+    .mannequin-small-div:hover{
+        background: linear-gradient(135deg, #009B77, #6dcf99);
+        width: 360px;
+        height: 150px;
+    }
+}
 .mannequin-small-div:hover{
     background: linear-gradient(135deg, #009B77, #6dcf99);
     width: 350px;
@@ -95,7 +105,21 @@
     overflow: hidden;
     cursor: pointer;
 }
-@media (max-width:550px) {
+@media (max-width: 800px) {
+    .swiper-image{
+        width: 100%;
+        height: 350px !important;
+    }
+    .swiper-button{
+        padding-bottom: 15px;
+    }
+    .swiper-button button{
+        width: 60%;
+        height: 45px !important;
+        font-size: 16px !important;
+    }
+}
+@media (max-width:650px) {
     .swiper-slide {
         width: 350px !important;
     }
@@ -104,6 +128,11 @@
     .swiper-slide {
         width: 100% !important;
     }
+    .swiper-image{
+        width: 100%;
+        height: 400px !important;
+    }
+
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -154,6 +183,9 @@
     margin-left: 5%;
     transition: .5s;
     border-radius: 10px;
+}
+.swiper-slide:hover .swiper-text h4{
+    color: #009B77;
 }
 .swiper-text h4{
     text-align: center;

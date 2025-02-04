@@ -1,0 +1,107 @@
+.woman-mannequin h1{
+    font-size: 40px ;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    padding-top: 20px;
+}
+@media (max-width:500px) {
+    .woman-mannequin h1{
+        font-size: 35px;
+    }
+}
+
+.all-womam-mannequin{
+    display: flex;
+    gap: 30px;
+    padding: 10px 0px 10px 0px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+.one-woman-mannequin {
+    width: 280px;
+    display: block;
+    font-size: 20px;
+    background-color: #fff;
+    color: rgb(29, 29, 29);
+    box-shadow: 0px 0px 10px #8383838a;
+    height: auto;
+    margin-top: 25px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.woman-mannequin-img{
+width: 100%;
+height: 300px;
+}
+.woman-mannequin-img img{
+    width: 100%;
+    height: 100%;
+}
+.one-woman-mannequin:hover .woman-mannequin-img img{
+    width: 90%;
+    height: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    transition: .5s;
+    border-radius: 10px;
+}
+.one-woman-mannequin:hover .woman-mannequin-text h4{
+color: #009B77;
+}
+.woman-mannequin-text h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.woman-mannequin-text p{
+    text-align: center;
+    font-weight: 800;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 20px 10px 5px 10px;
+}
+.woman-mannequin-button{
+    display: flex;
+    align-items: center;justify-content: center;
+    padding: 15px 20px 10px 20px;
+}
+.woman-mannequin-button a{
+    text-decoration: none;
+    width: 60%;
+    height: 30px;
+    background-color:  #009B77;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: .5s;
+}
+.woman-mannequin-button a:hover{
+    background-color:  #fff;
+    color: #009B77;
+    border: 1px solid #009B77;
+}
+.all-womam-mannequin a{
+    text-decoration: none;  
+}
