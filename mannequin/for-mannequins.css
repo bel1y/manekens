@@ -137,3 +137,10 @@ color: #009B77;
     color: #009B77;
     border: 1px solid #009B77;
 }
+
+@media (max-width:1344px) {
+    .all-womam-mannequin{
+        align-items: center;
+        justify-content: center;
+    }
+}
