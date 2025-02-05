@@ -355,3 +355,8 @@
         padding: 0 5px;
     }
 }
+@media (max-width:500px) {
+    .media-menu-navabr{
+        width: 100%;
+    }
+}

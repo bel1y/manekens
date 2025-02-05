@@ -105,3 +105,35 @@ color: #009B77;
 .all-womam-mannequin a{
     text-decoration: none;  
 }
+
+.mannequins-button-to-see-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.mannequins-button-to-see-more a{
+    text-decoration: none;
+    width: 300px;
+    height: 40px;
+    background-color:  #009B77;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: .5s;
+}
+.mannequins-button-to-see-more a:hover{
+    background-color:  #fff;
+    color: #009B77;
+    border: 1px solid #009B77;
+}
