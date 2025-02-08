@@ -21,14 +21,6 @@ document.addEventListener('click', function(event) {
     }
 });
 
-function Uzbek() {
-    window.location = "/Uzbekcha.html";
-}
-
-function Russian() {
-    window.location = "/index.html";
-}
-
 function openmenu() {
     document.querySelector(".media-menu-navabr").style = "top:0;";
 }
