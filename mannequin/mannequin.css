@@ -197,6 +197,7 @@
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
+    color: #000;
 }
 .swiper-text p{
     text-align: center;
@@ -205,6 +206,7 @@
     font-optical-sizing: auto;
     font-style: normal;
     padding: 20px 10px 5px 10px;
+    color: #000;
 }
 .swiper-button button{
     width: 60%;
@@ -264,4 +266,8 @@
     font-style: normal;
     padding-top: 40px;
     padding-left: 20px;
+}
+
+.swiper-wrapper a{
+    text-decoration: none;
 }
